@@ -2,6 +2,9 @@
 
 **Goal**: Build a todo app with **1-level nested drag & drop**, filters, and persistence — **no frameworks, no libraries**.
 
+
+## live demo: [https://todo-fresher-starter-phi.vercel.app/](https://todo-fresher-starter-phi.vercel.app/)
+
 ---
 
 # 📝 Todo App
