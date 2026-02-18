@@ -358,6 +358,16 @@ inputEl.addEventListener("keypress", (e) => {
     }
 });
 
+// Add todo button event listener
+const addTodoBtn = document.getElementById("add-todo-btn");
+addTodoBtn.addEventListener("click", () => {
+    if (inputEl.value.trim() !== "") {
+        addTodo(inputEl.value.trim());
+        inputEl.value = "";
+        inputEl.focus();
+    }
+});
+
 // Filter functionality
 const filterButtons = document.querySelectorAll(".filters button");
 

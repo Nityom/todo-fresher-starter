@@ -43,13 +43,18 @@ h1 {
     }
 }
 
+.input-container {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
 #new-todo {
-    width: 100%;
+    flex: 1;
     padding: 1rem;
     font-size: 1rem;
     border: 2px solid #e2e8f0;
     border-radius: 8px;
-    margin-bottom: 1.5rem;
     transition: border-color 0.2s, box-shadow 0.2s;
     outline: none;
 }
@@ -59,10 +64,49 @@ h1 {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+.add-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.add-btn:hover {
+    background: #5568d3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.add-btn:active {
+    transform: translateY(0);
+    background: #4c5fd4;
+}
+
+.add-btn:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
 @media (max-width: 640px) {
+    .input-container {
+        gap: 0.5rem;
+    }
+    
     #new-todo {
         padding: 0.75rem;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+    
+    .add-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
 }
 
